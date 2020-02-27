@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         if(nums.length == 0 || nums == null) return new int[]{-1,-1};

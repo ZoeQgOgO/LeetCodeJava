@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 class Solution {
     public int[][] merge(int[][] intervals) {
         if(intervals.length == 0){

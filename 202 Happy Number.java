@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     List<Integer> set = new ArrayList();
     public boolean isHappy(int n) {  

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Solution {
     public int nthUglyNumber(int n) {
           if(n <= 0){

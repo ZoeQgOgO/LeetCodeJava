@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     public List<List<Integer>> generate(int numRows) {
         if(numRows == 0) return new ArrayList<List<Integer>>();

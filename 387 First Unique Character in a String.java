@@ -1,3 +1,7 @@
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Set;
+
 class Solution {
     public int firstUniqChar(String s) {
         LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();

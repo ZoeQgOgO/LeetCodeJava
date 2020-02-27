@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class Solution {
     public int longestPalindrome(String s) {
         if(s.length() == 0) return 0;

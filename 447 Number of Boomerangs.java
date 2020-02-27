@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Solution {
     public int numberOfBoomerangs(int[][] points) {
         int result = 0;

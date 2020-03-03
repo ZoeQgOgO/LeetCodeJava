@@ -7,19 +7,19 @@ import java.util.List;
  */
 class Solution {
     public List<TreeNode> generateTrees(int n) {
-       if(n ==0) return new ArrayList<>();
-        else return recursion(1,n);
+       if(n == 0) return new ArrayList<>();
+        else return recursion(1, n);
     }
     public List<TreeNode> recursion(int l, int r){
         List<TreeNode> result = new ArrayList<>();
-        if(l > r|| l < 0){
+        if(l > r || l < 0){
             result.add(null);
         }
-        if(l==r){
+        if(l == r){
             result.add(new TreeNode(l));
             return result;
         }
-        for(int i =l; i <=r; i++){
+        for(int i = l; i <= r; i++){
             List<TreeNode>left = recursion(l, i-1);
             List<TreeNode>right = recursion(i+1,r);
             

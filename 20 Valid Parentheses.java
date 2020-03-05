@@ -6,18 +6,19 @@ class Solution {
     public boolean isValid(String s) {
         if(s == null || s.length()==0) return true;
         Map<Character, Character> map = new HashMap<>();
-        Stack<Character> res = new Stack<>();
+        Stack<Character> stack = new Stack<>();
         map.put('}','{');
         map.put(')','(');
         map.put(']','[');
         map.put('>','<');
         for(char c: s.toCharArray()){
-            if(!res.isEmpty() && map.containsKey(c) && res.peek()== map.get(c)){
-                res.pop();
+            if(!stack.isEmpty() && map.containsKey(c) && stack.peek()== map.get(c)){
+                stack.pop();
                 continue;
             }
-            res.push(c);
+            stack.push(c);
         }
-        return res.isEmpty();
+        return stack.isEmpty();
     }
 }
+

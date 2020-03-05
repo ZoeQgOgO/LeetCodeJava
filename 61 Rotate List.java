@@ -8,12 +8,12 @@ class Solution {
                 count ++;
             }
             if(k >= count){
-                k = k % count;
+                k %= count;
             }
             if(k > 0){
                 ListNode fast = head;
                 ListNode slow = head;
-                while (k > 0){
+                while(k > 0){
                     fast = fast.next;
                     k--;
                 }

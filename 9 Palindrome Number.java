@@ -9,3 +9,16 @@ class Solution {
         return true;
     }
 }
+
+class Solution1 {
+    public boolean isPalindrome(int x){
+        int res = 0;
+        int temp = x;
+        if(temp < 0) return false;
+        while(x > 0){
+            res = res*10 + x % 10;
+            x /= 10;
+        }
+        return temp == res;
+    }
+}
